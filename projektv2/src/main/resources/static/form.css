@@ -1,0 +1,96 @@
+.form-container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #c02222;
+}
+
+.form-button {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #c02222;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #c02222;
+}
+.button-back{
+    position: absolute;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #c02222;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* Select styles */
+.form-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Option styles */
+.form-select option {
+    background-color: #fff;
+    color: #cb4242;
+}
+
+.form-select option:hover {
+    background-color: #f2f2f2;
+}
+
+.form-select option:checked {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
