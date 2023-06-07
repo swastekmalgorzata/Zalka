@@ -23,17 +23,16 @@ Endpoint /cars
     Opis: Zwraca listę samochodów Formuły 1.
     Parametry zapytania: brak
 
-Endpoint /cars/create
+Endpoint /carAdd
 
     Metoda: POST
     Ścieżka: /cars/create
     Opis: Tworzy nowy samochód Formuły 1.
     Parametry zapytania: dane samochodu w formacie JSON.
 
-Endpoint /cars/edit/{id}
+Endpoint /carEdit/{id}
 
     Metoda: PUT
-    Ścieżka: /cars/edit/{id}
     Opis: Edytuje istniejący samochód Formuły 1 o podanym identyfikatorze.
     Parametry zapytania: identyfikator samochodu (ID) oraz dane do edycji w formacie JSON.
 
@@ -59,22 +58,19 @@ Przykłady użycia
 
     Pobieranie listy samochodów:
 
-    bash
 
 GET /cars
 
-Tworzenie nowego samochodu:
 
-css
 
 POST /
-Body: {"brand": "Mercedes", "model": "W12", "year": 2023, "driver": "Lewis Hamilton", "startNumber": 44}
+Body: {"Manufacturer": "Mercedes", "engine": "W12", "year": 2023, "driver": "Lewis Hamilton", "startNumber": 44}
 
 Edycja istniejącego samochodu o ID 1:
 
 css
 
-PUT /cars/edit/1
+PUT /carEdit/1
 Body: {"brand": "Mercedes", "model": "W13", "year": 2024, "driver": "Lewis Hamilton", "startNumber": 44}
 
 Pobieranie strony tytułowej:
