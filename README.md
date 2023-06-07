@@ -64,14 +64,13 @@ GET /cars
 
 
 POST /
-Body: {"Manufacturer": "Mercedes", "engine": "W12", "year": 2023, "driver": "Lewis Hamilton", "startNumber": 44}
-
+Body: {"manufacturer": "Mercedes", "engine": "W12", "season": 2023, "driver": "Lewis Hamilton", "wins": 0, "races": 44}
 Edycja istniejącego samochodu o ID 1:
 
 css
 
 PUT /carEdit/1
-Body: {"brand": "Mercedes", "model": "W13", "year": 2024, "driver": "Lewis Hamilton", "startNumber": 44}
+Body: {"manufacturer": "Mercedes", "engine": "W12", "season": 2023, "driver": "Lewis Hamilton", "wins": 0, "races": 44}
 
 Pobieranie strony tytułowej:
 
