@@ -38,7 +38,6 @@
 
 <div class="container" th:each="principal : ${allPrincipals}">
     <div class="result">
-
         <a th:text="'Id: ' + ${principal.getId()}"></a>
         <a th:text="'First name: ' + ${principal.getFirstName()}"></a>
         <a th:text="'Last name: ' + ${principal.getLastName()}"></a>
