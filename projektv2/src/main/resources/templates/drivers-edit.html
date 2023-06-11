@@ -55,7 +55,7 @@
             <br/>
 
             <label class="form-label" for="lastName">LastName:</label>
-            <input class="form-input" id="lastName" name="lastName" th:attr="*{lastName}"  th:value="${driver.lastName}" type="text"/>
+            <input class="form-input" id="lastName" name="lastName" th:attr="name='lastName'" th:value="${driver.lastName}" type="text"/>
             <span class="validationError"
                   th:errors="*{lastName}"
                   th:if="${#fields.hasErrors('lastName')}">LastName Error
@@ -63,7 +63,7 @@
             <br/>
 
             <label class="form-label" for="age">Age:</label>
-            <input class="form-input" id="age" th:attr="*{age}" th:value="${driver.age}" type="number"/>
+            <input class="form-input" id="age" th:attr="name='age'" th:value="${driver.age}" type="number"/>
             <span class="validationError"
                   th:errors="*{age}"
                   th:if="${#fields.hasErrors('age')}">age Error

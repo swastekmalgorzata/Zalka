@@ -36,7 +36,7 @@
 
 <div class="container" >
 
-    <form class="form-container" method="POST" th:action="@{/principalEdit}" th:object="${principal}">
+    <form class="form-container" method="POST" th:action="@{/principalEdit}" th:object="${principalx}">
         <div class="form-group">
             <div th:if="${#fields.hasErrors()}">
           <span class="validationError">
@@ -44,7 +44,7 @@
           </span>
             </div>
             <label class="form-label" for="firstName">FirstName:</label>
-            <input class="form-input" id="firstName" th:attr="name='firstName'" th:value="${principal.firstName}" type="text"/>
+            <input class="form-input" id="firstName" th:attr="name='firstName'" th:value="${principalx.firstName}" type="text"/>
             <span class="validationError"
                   th:errors="*{firstName}"
                   th:if="${#fields.hasErrors('firstName')}">FirstName Error
@@ -52,7 +52,7 @@
             <br/>
 
             <label  class="form-label" for="lastName">LastName:</label>
-            <input class="form-input" id="lastName" name="lastName" th:value="${principal.lastName}" type="text"/>
+            <input class="form-input" id="lastName" name="lastName" th:value="${principalx.lastName}" type="text"/>
             <span class="validationError"
                   th:errors="*{lastName}"
                   th:if="${#fields.hasErrors('lastName')}">LastName Error
@@ -60,7 +60,7 @@
             <br/>
 
             <label class="form-label" for="age">Age:</label>
-            <input class="form-input" id="age" th:field="*{age}" th:value="${principal.age}" type="number"/>
+            <input class="form-input" id="age" th:field="*{age}" th:value="${principalx.age}" type="number"/>
             <br/>
 
             <input class="form-button" type="submit" value="Submit"/>
